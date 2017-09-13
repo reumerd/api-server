@@ -32,10 +32,10 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': {
-    view: 'homepage'
-  }
-
+  '/': 'HomePage.show', 
+  'POST /user/signup': 'UserController.create',
+  'POST /user/login': 'AuthController.login'
+  
   /***************************************************************************
   *                                                                          *
   * Custom routes here...                                                    *
