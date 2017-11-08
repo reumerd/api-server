@@ -33,8 +33,17 @@ module.exports.routes = {
   ***************************************************************************/
 
   '/': 'HomePage.show', 
-  'POST /user/signup': 'UserController.create',
-  'POST /user/login': 'AuthController.login'
+  //'POST /user/signup': 'UserController.create',
+  'POST /user/login': 'AuthController.login',
+  //'GET /answers': {response: 'forbidden'},
+  'POST /answers': 'AnswersController.create',
+  'GET /answers': 'AnswersController.get',
+  'PUT /answers': {response: 'forbidden'},
+  'DELETE /answers': {response: 'forbidden'},
+  /* '/home' : {
+    asset: 'index.html',
+    skipAssets: true
+  } */
   
   /***************************************************************************
   *                                                                          *

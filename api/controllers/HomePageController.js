@@ -6,7 +6,7 @@
  */
 module.exports = {
 	show: function (req, res) {
-		console.log('Hello There');
+		//console.log('Hello There');
 		return res.view('homepage');
 	}
 };

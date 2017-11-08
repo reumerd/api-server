@@ -29,36 +29,36 @@ module.exports.http = {
   * router is invoked by the "router" middleware below.)                     *
   *                                                                          *
   ***************************************************************************/
-
-    // order: [
-    //   'startRequestTimer',
-    //   'cookieParser',
-    //   'session',
-    //   'myRequestLogger',
-    //   'bodyParser',
-    //   'handleBodyParserError',
-    //   'compress',
-    //   'methodOverride',
-    //   'poweredBy',
-    //   '$custom',
-    //   'router',
-    //   'www',
-    //   'favicon',
-    //   '404',
-    //   '500'
-    // ],
+    /*
+    order: [
+       'startRequestTimer',
+       'cookieParser',
+       'session',
+       'myRequestLogger',
+       'bodyParser',
+       'handleBodyParserError',
+       'compress',
+       'methodOverride',
+       'poweredBy',
+       '$custom',
+       'router',
+       'www',
+       'favicon',
+       '404',
+       '500'
+    ], */
 
   /****************************************************************************
   *                                                                           *
   * Example custom middleware; logs each request to the console.              *
   *                                                                           *
   ****************************************************************************/
-
-    // myRequestLogger: function (req, res, next) {
-    //     console.log("Requested :: ", req.method, req.url);
-    //     return next();
-    // }
-
+    /*
+    myRequestLogger: function (req, res, next) {
+         console.log("Requested :: ", req.method, req.url);
+         return next();
+    }
+    */
 
   /***************************************************************************
   *                                                                          *
@@ -77,7 +77,7 @@ module.exports.http = {
 
     // bodyParser: require('skipper')({strict: true})
 
-  },
+  }
 
   /***************************************************************************
   *                                                                          *
@@ -89,5 +89,5 @@ module.exports.http = {
   *                                                                          *
   ***************************************************************************/
 
-  // cache: 31557600000
+  //cache: 31557600000
 };

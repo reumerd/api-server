@@ -6,8 +6,8 @@
  */
 
 module.exports = function (req, res, next) {
-	//let token;
-	var token;
+	let token;
+	//var token;
 	if (req.headers && req.headers.authorization) {
 		var parts = req.headers.authorization.split(' ');
 		if (parts.length == 2) {

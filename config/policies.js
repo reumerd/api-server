@@ -29,10 +29,19 @@ module.exports.policies = {
   '*': ['isAuthorized'],
 
   'UserController': {
-    'create': true
+    'create': true,
+  },
+  
+  'AuthController': {
+    '*': true
   },
 
-  'AuthController': {
+  'AnswersController': {
+    'create': true,
+    'get': ['isAuthorized']
+  },
+
+  'HomePageController': {
     '*': true
   }
 
